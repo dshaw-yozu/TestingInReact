@@ -1,23 +1,34 @@
 {
-  "name": "react-testing-library-demo",
-  "version": "1.0.0",
-  "description": "An example of how to use the react-testing-library in codesandbox",
-  "keywords": [],
-  "homepage": "https://codesandbox.io/s/new",
-  "main": "src/index.js",
-  "dependencies": {
-    "@testing-library/jest-dom": "4.1.0",
-    "@testing-library/react": "9.2.0",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
-    "react-scripts": "3.1.2",
-    "@testing-library/dom": "https://pkg.csb.dev/testing-library/dom-testing-library/commit/37f1c76d/@testing-library/dom"
-  },
-  "devDependencies": {},
+  "name": "testinginreact",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "jest": "^30.0.4",
+    "jsdom": "^26.1.0",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.4"
   }
 }
