@@ -1,12 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Testing in react
 
-Currently, two official plugins are available:
+## Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1 incomplete implementation of a simple calculator. It takes 2 numbers and an operator and returns the result on screen in real time. There is also a reset button which clears the inputs and operator selector.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Plan
+
+* Start off with the basics and setup some tests for a simple set of arithmetic functions (Unit Tests)
+* Move onto testing React components (Component Tests)
+* Look into Playwright for Acceptance tests
+
+
+## Unit Tests
+
+Add to and improve the tests within: src/utils/operations.test.js
+
+## Component Tests
+
+Fix and improve the tests within src/components/Button.test.jsx.
+Add tests to the other components, probably in this order: Input -> Select -> Calculator
+
+## Acceptance Tests with Playwright
+
+Follow the Getting Started instructions https://playwright.dev/docs/intro and add series of acceptance tests proving the full functionality of the calculator
